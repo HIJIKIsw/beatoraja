@@ -296,6 +296,8 @@ public class MainLoader extends Application {
 		}
 
 		private void getInformation() {
+			message = MainController.getVersion()+"を使用中です _(┐「ε:)_";
+			/*
 			try {
 				URL url = new URL("https://api.github.com/repos/exch-bms2/beatoraja/releases/latest");
 				ObjectMapper mapper = new ObjectMapper();
@@ -311,6 +313,7 @@ public class MainLoader extends Application {
 				Logger.getGlobal().warning("最新版URL取得時例外:" + e.getMessage());
 				message = "バージョン情報を取得できませんでした";
 			}
+			*/
 		}
 	}
 

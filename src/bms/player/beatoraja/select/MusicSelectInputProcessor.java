@@ -383,8 +383,10 @@ public class MusicSelectInputProcessor {
             select.execute(MusicSelectCommand.OPEN_WITH_EXPLORER);
         }
 
+		/*
         if (input.isExitPressed()) {
             select.main.exit();
         }
+		*/
     }
 }

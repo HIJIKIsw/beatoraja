@@ -16,8 +16,8 @@ public enum JudgeProperty {
             new boolean[]{true, true, true, true, true, false },
             JudgeWindowRule.NORMAL
             ),
-    SEVENKEYS(new int[][]{ {-20, 20}, {-60, 60}, {-150, 150}, {-280, 220}, {-150, 500} },
-            new int[][]{ {-30, 30}, {-70, 70}, {-160, 160}, {-290, 230}, {-160, 500}},
+    SEVENKEYS(new int[][]{ {-16, 16}, {-33, 33}, {-150, 150}, {-280, 220}, {-150, 500} },
+            new int[][]{ {-20, 20}, {-40, 40}, {-160, 160}, {-290, 230}, {-160, 500}},
             new int[][]{ {-120, 120}, {-160, 160}, {-200, 200}, {-280, 220}},
             new int[][]{ {-130, 130}, {-170, 170}, {-210, 210}, {-290, 230}},
             new boolean[]{true, true, true, false, false, true },
@@ -132,7 +132,7 @@ public enum JudgeProperty {
     	
         private static int[][] create(int[][] org, int judgerank, int[] judgeWindowRate, boolean pms) {
     		final int[][] judge = new int[org.length][2];
-    		final boolean[] fix = pms ? new boolean[]{true, false, false, true, true} : new boolean[]{false, false, false, false, true};
+    		final boolean[] fix = pms ? new boolean[]{true, true, true, true, true} : new boolean[]{true, true, true, true, true};
     		for (int i = 0; i < judge.length; i++) {
     			for(int j = 0;j < 2;j++) {
 					judge[i][j] = fix[i] ? org[i][j] : org[i][j] * judgerank / 100;
