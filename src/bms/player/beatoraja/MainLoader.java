@@ -296,7 +296,7 @@ public class MainLoader extends Application {
 		}
 
 		private void getInformation() {
-			message = MainController.getVersion()+"を使用中です _(┐「ε:)_";
+			message = MainController.getVersion()+"を使用中です 😀";
 			/*
 			try {
 				URL url = new URL("https://api.github.com/repos/exch-bms2/beatoraja/releases/latest");

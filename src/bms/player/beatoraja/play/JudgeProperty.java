@@ -16,8 +16,8 @@ public enum JudgeProperty {
             new boolean[]{true, true, true, true, true, false },
             JudgeWindowRule.NORMAL
             ),
-    SEVENKEYS(new int[][]{ {-16, 16}, {-33, 33}, {-150, 150}, {-280, 220}, {-150, 500} },
-            new int[][]{ {-20, 20}, {-40, 40}, {-160, 160}, {-290, 230}, {-160, 500}},
+    SEVENKEYS(new int[][]{ {-16, 16}, {-33, 33}, {-117, 117}, {-280, 220}, {-150, 500} },
+            new int[][]{ {-20, 20}, {-40, 40}, {-128, 128}, {-290, 230}, {-160, 500}},
             new int[][]{ {-120, 120}, {-160, 160}, {-200, 200}, {-280, 220}},
             new int[][]{ {-130, 130}, {-170, 170}, {-210, 210}, {-290, 230}},
             new boolean[]{true, true, true, false, false, true },
